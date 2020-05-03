@@ -2,9 +2,9 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 215,
-        "worldScrollY": 269,
-        "zoom": 75,
+        "worldScrollX": 692,
+        "worldScrollY": 1511,
+        "zoom": 325,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
         "customColorsDark": "509878",
@@ -15717,24 +15717,24 @@
                 0,
                 0,
                 1,
-                0,
-                0,
-                0,
-                1,
-                0,
-                0,
+                255,
+                15,
                 0,
                 1,
-                0,
-                0,
-                0,
-                1,
-                0,
-                0,
+                255,
+                15,
                 0,
                 1,
+                1,
+                8,
                 0,
+                1,
+                1,
+                8,
                 0,
+                1,
+                255,
+                15,
                 0,
                 1,
                 0,
@@ -15818,299 +15818,65 @@
             "y": 422.7555555555556,
             "actors": [
                 {
-                    "spriteSheetId": "215c6e5f-38c8-4709-a9ec-e7cdc01ac702",
+                    "spriteSheetId": "c669cfa7-4bd7-4566-a079-ce2721be7601",
                     "movementType": "faceInteraction",
-                    "direction": "down",
+                    "direction": "up",
                     "moveSpeed": "1",
                     "animSpeed": "3",
-                    "id": "5d2b2813-ac2d-42a7-b265-fac0d071a67d",
-                    "x": 14,
-                    "y": 6,
-                    "name": "Guard_Food_Distribution",
-                    "script": [
-                        {
-                            "id": "30e15cc6-a48e-4807-b847-f1d7be4d7673",
-                            "command": "EVENT_GROUP",
-                            "args": {
-                                "__label": "Receiving food"
-                            },
-                            "children": {
-                                "true": [
-                                    {
-                                        "id": "94df55ab-2579-4869-8386-a00c202c2994",
-                                        "command": "EVENT_IF_FALSE",
-                                        "args": {
-                                            "variable": "111",
-                                            "__collapseElse": false
-                                        },
-                                        "children": {
-                                            "true": [
-                                                {
-                                                    "id": "b39b8acc-7d48-4d85-884c-e64bfb4e0252",
-                                                    "command": "EVENT_TEXT",
-                                                    "args": {
-                                                        "text": [
-                                                            "There. One loaf of\nbread."
-                                                        ],
-                                                        "avatarId": ""
-                                                    }
-                                                },
-                                                {
-                                                    "id": "26ea1bf9-a6e3-45ad-8355-ae4fdd4bea51",
-                                                    "command": "EVENT_INC_VALUE",
-                                                    "args": {
-                                                        "variable": "15"
-                                                    }
-                                                },
-                                                {
-                                                    "id": "2713c8be-65d2-425c-8e9d-ea1a803bbe30",
-                                                    "command": "EVENT_SET_TRUE",
-                                                    "args": {
-                                                        "variable": "111"
-                                                    }
-                                                },
-                                                {
-                                                    "id": "630d0990-7c71-4d81-b190-237f5444caa5",
-                                                    "command": "EVENT_END"
-                                                }
-                                            ],
-                                            "false": [
-                                                {
-                                                    "id": "1e21d2ef-b5ce-4a09-b1b9-6a98e6caf797",
-                                                    "command": "EVENT_TEXT",
-                                                    "args": {
-                                                        "text": "You already had\none.",
-                                                        "avatarId": ""
-                                                    }
-                                                },
-                                                {
-                                                    "id": "dfb2285c-09d5-4b6d-b5eb-e28512c6a861",
-                                                    "command": "EVENT_END"
-                                                }
-                                            ]
-                                        }
-                                    },
-                                    {
-                                        "id": "0e051e5e-277e-4682-ac0b-470e5ad45495",
-                                        "command": "EVENT_END"
-                                    }
-                                ]
-                            }
-                        },
-                        {
-                            "id": "2557ed11-0cdf-450e-bce1-8c627e2e60e9",
-                            "command": "EVENT_SWITCH",
-                            "args": {
-                                "variable": "3",
-                                "choices": 7,
-                                "__collapseCase0": false,
-                                "value0": 1,
-                                "__collapseCase1": false,
-                                "value1": 2,
-                                "__collapseCase2": false,
-                                "value2": 3,
-                                "__collapseCase3": false,
-                                "value3": 4,
-                                "__collapseCase4": false,
-                                "value4": 5,
-                                "__collapseCase5": false,
-                                "value5": 6,
-                                "__collapseCase6": false,
-                                "value6": 7,
-                                "__collapseCase7": false,
-                                "value7": 7,
-                                "__collapseCase8": false,
-                                "value8": 9,
-                                "__collapseCase9": false,
-                                "value9": 10,
-                                "__collapseCase10": false,
-                                "value10": 11,
-                                "__collapseCase11": false,
-                                "value11": 12,
-                                "__collapseCase12": false,
-                                "value12": 13,
-                                "__collapseCase13": false,
-                                "value13": 14,
-                                "__collapseCase14": false,
-                                "value14": 15,
-                                "__collapseCase15": false,
-                                "value15": 16,
-                                "__collapseElse": false,
-                                "__label": "DialogOnDay",
-                                "__collapse": true,
-                                "__comment": true
-                            },
-                            "children": {
-                                "true0": [
-                                    {
-                                        "id": "dae0d2df-df29-4ab9-9c4a-cadab8541f98",
-                                        "command": "EVENT_END"
-                                    }
-                                ],
-                                "true1": [
-                                    {
-                                        "id": "50ef3c25-50a7-4595-9946-03fed652f4b0",
-                                        "command": "EVENT_TEXT",
-                                        "args": {
-                                            "text": [
-                                                "Setence on day 2\npassed"
-                                            ],
-                                            "avatarId": ""
-                                        }
-                                    },
-                                    {
-                                        "id": "f6d48773-3821-4a23-8b38-94f0d4830620",
-                                        "command": "EVENT_END"
-                                    }
-                                ],
-                                "true2": [
-                                    {
-                                        "id": "148ce18e-080b-4f71-91ab-31b4185f98ca",
-                                        "command": "EVENT_TEXT",
-                                        "args": {
-                                            "text": [
-                                                "Sentence on day 3\n"
-                                            ],
-                                            "avatarId": ""
-                                        }
-                                    },
-                                    {
-                                        "id": "6608c31d-65dc-40b8-8a32-a02b65b676d4",
-                                        "command": "EVENT_END"
-                                    }
-                                ],
-                                "true3": [
-                                    {
-                                        "id": "79473f89-9073-4652-923a-ca0a0a23d20a",
-                                        "command": "EVENT_TEXT",
-                                        "args": {
-                                            "text": [
-                                                "Sentence on day 4"
-                                            ],
-                                            "avatarId": ""
-                                        }
-                                    },
-                                    {
-                                        "id": "37cd0d47-ad8f-4f0e-9884-f1917278bd38",
-                                        "command": "EVENT_END"
-                                    }
-                                ],
-                                "true4": [
-                                    {
-                                        "id": "17a330c7-2f9e-4a4e-b1d5-24f3ea7cab0d",
-                                        "command": "EVENT_TEXT",
-                                        "args": {
-                                            "text": [
-                                                "Sentence on day 5"
-                                            ],
-                                            "avatarId": ""
-                                        }
-                                    },
-                                    {
-                                        "id": "fb2826b1-c948-436b-afdf-96768052f57c",
-                                        "command": "EVENT_END"
-                                    }
-                                ],
-                                "true5": [
-                                    {
-                                        "id": "accf1168-8197-496f-aeac-78f9330e72f1",
-                                        "command": "EVENT_TEXT",
-                                        "args": {
-                                            "text": [
-                                                "Sentence on day 6"
-                                            ],
-                                            "avatarId": ""
-                                        }
-                                    },
-                                    {
-                                        "id": "a4f79df3-89df-4268-988b-cc741992ca3a",
-                                        "command": "EVENT_END"
-                                    }
-                                ],
-                                "true6": [
-                                    {
-                                        "id": "54a3d593-a03d-4f44-8bd6-f05dcbc062e6",
-                                        "command": "EVENT_TEXT",
-                                        "args": {
-                                            "text": [
-                                                "Sentence on day 7"
-                                            ],
-                                            "avatarId": ""
-                                        }
-                                    },
-                                    {
-                                        "id": "f193b082-34e9-4a91-a0b4-0a856c069711",
-                                        "command": "EVENT_END"
-                                    }
-                                ],
-                                "true7": [
-                                    {
-                                        "id": "55108cd9-b01d-4810-966c-18e23940f9ef",
-                                        "command": "EVENT_END"
-                                    }
-                                ],
-                                "true8": [
-                                    {
-                                        "id": "f3370a21-a8f6-4aaf-a06f-ac00c1450eec",
-                                        "command": "EVENT_END"
-                                    }
-                                ],
-                                "true9": [
-                                    {
-                                        "id": "b14203a4-6829-4bb2-a544-8bbec9b999e4",
-                                        "command": "EVENT_END"
-                                    }
-                                ],
-                                "true10": [
-                                    {
-                                        "id": "3f767514-c10f-4173-99d2-3a646a052482",
-                                        "command": "EVENT_END"
-                                    }
-                                ],
-                                "true11": [
-                                    {
-                                        "id": "be667373-46fc-487d-b84e-cac49cf8a95e",
-                                        "command": "EVENT_END"
-                                    }
-                                ],
-                                "true12": [
-                                    {
-                                        "id": "208ce0f2-30d3-4cf6-8f09-e06a22442e2e",
-                                        "command": "EVENT_END"
-                                    }
-                                ],
-                                "true13": [
-                                    {
-                                        "id": "0abf7cba-b6e6-4aba-890b-e9d116be1366",
-                                        "command": "EVENT_END"
-                                    }
-                                ],
-                                "true14": [
-                                    {
-                                        "id": "06e851bf-e5a6-4922-afd0-16949bbeac3f",
-                                        "command": "EVENT_END"
-                                    }
-                                ],
-                                "true15": [
-                                    {
-                                        "id": "38c0d564-c729-4f38-96b4-34ebb0124c60",
-                                        "command": "EVENT_END"
-                                    }
-                                ],
-                                "false": [
-                                    {
-                                        "id": "3604b25d-a891-47d8-bdae-ffb8daf182cd",
-                                        "command": "EVENT_END"
-                                    }
-                                ]
-                            },
-                            "__type": "event"
-                        },
-                        {
-                            "id": "135094b4-97e1-42ea-9fc3-b3600c6e0b22",
-                            "command": "EVENT_END"
-                        }
-                    ]
+                    "id": "2b577525-d4ea-4957-89b8-f3fc27f7ae04",
+                    "x": 8,
+                    "y": 16
+                },
+                {
+                    "spriteSheetId": "74966335-63a6-4998-bc18-7ec9ef2bbfbc",
+                    "movementType": "faceInteraction",
+                    "direction": "up",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "d7fbe396-dfb4-4497-86b5-25e4d6895993",
+                    "x": 10,
+                    "y": 16
+                },
+                {
+                    "spriteSheetId": "dfa75239-299d-41fe-a6cd-9e9438da1938",
+                    "movementType": "faceInteraction",
+                    "direction": "up",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "2ee00224-022a-437e-b9f5-8a1b8fb8b091",
+                    "x": 18,
+                    "y": 16
+                },
+                {
+                    "spriteSheetId": "35b61700-f747-49ac-b7db-c0b33e93e8ac",
+                    "movementType": "faceInteraction",
+                    "direction": "up",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "bea759e7-e9e1-4faa-ab36-c665b417337b",
+                    "x": 11,
+                    "y": 19
+                },
+                {
+                    "spriteSheetId": "40dcd163-9f72-4861-8131-b01eb9baa000",
+                    "movementType": "faceInteraction",
+                    "direction": "up",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "be95dfaf-a467-4099-83f8-318ac0e7613f",
+                    "x": 15,
+                    "y": 18
+                },
+                {
+                    "spriteSheetId": "1a11d3fb-ad73-47c6-9066-2332e2b9e0af",
+                    "movementType": "static",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "1",
+                    "id": "da60ed7a-2e6d-44f3-bc53-f6b989d67b32",
+                    "x": 24,
+                    "y": 24,
+                    "animate": true
                 }
             ],
             "triggers": [
@@ -17099,7 +16865,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Barracks.png",
-            "_v": 1588233923170
+            "_v": 1588496927077
         },
         {
             "id": "cb8602db-5591-40e7-a185-e39f2dfd5692",
@@ -17109,7 +16875,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "barrack_interior.png",
-            "_v": 1588233923170
+            "_v": 1588496927077
         },
         {
             "id": "1e71c32e-ab16-410c-bc1e-d3a2070619cf",
@@ -17119,7 +16885,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "camp_1.png",
-            "_v": 1588233923170
+            "_v": 1588496927077
         },
         {
             "id": "51e07061-4d04-4595-9664-a32e13436360",
@@ -17129,7 +16895,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "camp_2.png",
-            "_v": 1588233923170
+            "_v": 1588496927077
         },
         {
             "id": "e90850dd-5ca6-4972-89a1-0a64e8d53bcd",
@@ -17139,7 +16905,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "camp_3.png",
-            "_v": 1588233923170
+            "_v": 1588496927077
         },
         {
             "id": "94539507-d2ae-4c06-90aa-6d86b0b093a7",
@@ -17149,7 +16915,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "camp_4.png",
-            "_v": 1588233923171
+            "_v": 1588496927077
         },
         {
             "id": "3a615edd-f1b1-44c4-8ac2-6da8bb1ea2f1",
@@ -17159,7 +16925,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "camp_5.png",
-            "_v": 1588233923171
+            "_v": 1588496927077
         },
         {
             "id": "8ad856f9-ad8c-482f-8735-7d82246de0f3",
@@ -17169,47 +16935,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "camp_6.png",
-            "_v": 1588233923171
-        },
-        {
-            "id": "b7148f5f-966c-42e6-9f54-d28d387be23e",
-            "name": "Camp_bottomMiddle",
-            "width": 32,
-            "height": 32,
-            "imageWidth": 256,
-            "imageHeight": 256,
-            "filename": "Camp_bottomMiddle.png",
-            "_v": 1588233923172
-        },
-        {
-            "id": "c2e38e15-6303-4590-8b16-eadc067ec6d4",
-            "name": "camp_bottomRight",
-            "width": 32,
-            "height": 32,
-            "imageWidth": 256,
-            "imageHeight": 256,
-            "filename": "camp_bottomRight.png",
-            "_v": 1588233923171
-        },
-        {
-            "id": "7ee61afb-cfcb-46a3-a54d-41b08a4ff958",
-            "name": "camp_topMiddle",
-            "width": 32,
-            "height": 32,
-            "imageWidth": 256,
-            "imageHeight": 256,
-            "filename": "camp_topMiddle.png",
-            "_v": 1588233923172
-        },
-        {
-            "id": "8c3f1c75-899a-4576-a701-808980655be3",
-            "name": "camp_topRight",
-            "width": 32,
-            "height": 32,
-            "imageWidth": 256,
-            "imageHeight": 256,
-            "filename": "camp_topRight.png",
-            "_v": 1588233923172
+            "_v": 1588496927077
         },
         {
             "id": "6fad1892-bcb2-4924-bd1c-1e4d03dfeabb",
@@ -17219,7 +16945,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "cave.png",
-            "_v": 1588233923172
+            "_v": 1588496927077
         },
         {
             "id": "b340b9a2-2865-4e05-91c0-148846a693c8",
@@ -17229,7 +16955,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "house.png",
-            "_v": 1588233923172
+            "_v": 1588496927077
         },
         {
             "id": "a1639c01-eb6d-4d15-b3a0-d1c2a40c352b",
@@ -17239,7 +16965,7 @@
             "imageWidth": 96,
             "imageHeight": 16,
             "filename": "Items.png",
-            "_v": 1588233923172
+            "_v": 1588496927077
         },
         {
             "id": "f8b1c7ad-7bb2-44b2-8189-175ae8698f11",
@@ -17249,7 +16975,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "logo.png",
-            "_v": 1588233923172
+            "_v": 1588496927077
         },
         {
             "id": "b49ea566-b022-478c-979d-ec3ee255fdc5",
@@ -17259,7 +16985,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "menu.png",
-            "_v": 1588233923172
+            "_v": 1588496927077
         },
         {
             "id": "fbe75bcf-27d7-4551-98dc-96d499f906ba",
@@ -17269,7 +16995,7 @@
             "imageWidth": 166,
             "imageHeight": 144,
             "filename": "MenuItems_Placeholder.png",
-            "_v": 1588233923172
+            "_v": 1588496927078
         },
         {
             "id": "355dfc79-1e1b-41c0-bb2a-d36dd31b0d56",
@@ -17279,7 +17005,7 @@
             "imageWidth": 166,
             "imageHeight": 144,
             "filename": "MenuPlaceholder.png",
-            "_v": 1588233923172
+            "_v": 1588496927078
         },
         {
             "id": "7767d28f-3c08-4f21-85c5-0405e5c89198",
@@ -17289,7 +17015,7 @@
             "imageWidth": 166,
             "imageHeight": 144,
             "filename": "MenuStats_Placeholder.png",
-            "_v": 1588233923172
+            "_v": 1588496927078
         },
         {
             "id": "1b7fa267-d716-40f0-b0d0-f4f966610e07",
@@ -17299,7 +17025,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "outside.png",
-            "_v": 1588233923172
+            "_v": 1588496927078
         },
         {
             "id": "0b35a06b-6d2e-49d7-8b55-ec989e49a106",
@@ -17309,7 +17035,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "ramp.png",
-            "_v": 1588233923172
+            "_v": 1588496927078
         },
         {
             "id": "40fda058-df90-4205-a239-fe77bce4fa79",
@@ -17319,7 +17045,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "stars.png",
-            "_v": 1588233923173
+            "_v": 1588496927078
         },
         {
             "id": "f047ff0e-58ad-49fc-bd2b-ec84fc1f7ab3",
@@ -17329,7 +17055,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "titlescreen.png",
-            "_v": 1588233923173
+            "_v": 1588496927078
         },
         {
             "id": "ed36c1d5-40b6-4d4c-b763-f07d94ff418e",
@@ -17339,7 +17065,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Train.png",
-            "_v": 1588233923172
+            "_v": 1588496927078
         },
         {
             "id": "f3102db4-2273-411d-b33f-4d6f65959c60",
@@ -17349,7 +17075,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "underground.png",
-            "_v": 1588233923173
+            "_v": 1588496927078
         },
         {
             "id": "8333404c-9543-473b-9ff7-44924ded8c5b",
@@ -17359,7 +17085,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "workshop-interior.png",
-            "_v": 1588233923173
+            "_v": 1588496927078
         }
     ],
     "spriteSheets": [
@@ -17369,7 +17095,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "cat.png",
-            "_v": 1588233923173
+            "_v": 1588496927054
         },
         {
             "id": "f0c3033d-e82a-407d-9fe2-3d5da4f59c09",
@@ -17377,7 +17103,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "checkbox.png",
-            "_v": 1588233923173
+            "_v": 1588496927054
         },
         {
             "id": "17219846-cda9-4e84-bdfa-c3ff105d42cc",
@@ -17385,7 +17111,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "dog.png",
-            "_v": 1588233923173
+            "_v": 1588496927054
         },
         {
             "id": "ede130e6-013a-42d1-a786-1aed3fd3cf32",
@@ -17393,7 +17119,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "duck.png",
-            "_v": 1588233923175
+            "_v": 1588496927054
         },
         {
             "id": "f2610e3c-8ff9-42fa-a9bb-d1591031fa17",
@@ -17401,7 +17127,7 @@
             "numFrames": 4,
             "type": "animated",
             "filename": "fire.png",
-            "_v": 1588233923174
+            "_v": 1588496927054
         },
         {
             "id": "5a3b26b9-b209-46c4-a35d-ab589ee8bce1",
@@ -17409,7 +17135,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "heart.png",
-            "_v": 1588233923173
+            "_v": 1588496927054
         },
         {
             "id": "09ad70c6-3ce5-4b97-9e96-466221418a45",
@@ -17417,7 +17143,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "ice.png",
-            "_v": 1588233923175
+            "_v": 1588496927054
         },
         {
             "id": "b5cc8bbd-c107-4e51-9ec5-41f882b586ae",
@@ -17425,7 +17151,23 @@
             "numFrames": 4,
             "type": "animated",
             "filename": "Items.png",
-            "_v": 1588233923174
+            "_v": 1588496927054
+        },
+        {
+            "id": "e43d9c10-e62a-431f-9b49-fec14d8f7e4c",
+            "name": "item_medicine",
+            "numFrames": 1,
+            "type": "static",
+            "filename": "item_medicine.png",
+            "_v": 1588496927054
+        },
+        {
+            "id": "1a11d3fb-ad73-47c6-9066-2332e2b9e0af",
+            "name": "item_soup",
+            "numFrames": 2,
+            "type": "animated",
+            "filename": "item_soup.png",
+            "_v": 1588496927054
         },
         {
             "id": "17f795ce-88fd-4508-8a88-0d16e17d0251",
@@ -17433,7 +17175,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "MenuArrow.png",
-            "_v": 1588233923174
+            "_v": 1588496927054
         },
         {
             "id": "dfa75239-299d-41fe-a6cd-9e9438da1938",
@@ -17441,7 +17183,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc001.png",
-            "_v": 1588233923176
+            "_v": 1588496927054
         },
         {
             "id": "40dcd163-9f72-4861-8131-b01eb9baa000",
@@ -17449,7 +17191,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc002.png",
-            "_v": 1588233923176
+            "_v": 1588496927054
         },
         {
             "id": "52ad34df-f245-4b2a-b94c-a82af1002871",
@@ -17457,7 +17199,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "npc003.png",
-            "_v": 1588233923176
+            "_v": 1588496927054
         },
         {
             "id": "dbc3d5e1-7f1b-47bf-864a-ccc5dab4501d",
@@ -17465,7 +17207,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc_ guard.png",
-            "_v": 1588233923174
+            "_v": 1588496927054
         },
         {
             "id": "5d6c73d5-2f81-4b5c-9c52-a8519bc4f572",
@@ -17473,7 +17215,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc_capo_1.png",
-            "_v": 1588233923174
+            "_v": 1588496927054
         },
         {
             "id": "35b61700-f747-49ac-b7db-c0b33e93e8ac",
@@ -17481,7 +17223,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc_ceasar.png",
-            "_v": 1588233923174
+            "_v": 1588496927054
         },
         {
             "id": "e5d7e3ea-c36e-46ca-bb62-6d6202b7d383",
@@ -17489,7 +17231,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc_doctor_1.png",
-            "_v": 1588233923174
+            "_v": 1588496927054
         },
         {
             "id": "0fa027a7-dadd-4ec3-8d0f-5787667cd03d",
@@ -17497,7 +17239,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc_enemy.png",
-            "_v": 1588233923174
+            "_v": 1588496927054
         },
         {
             "id": "5bd6d620-6bb5-43db-b0c1-0e34a7574470",
@@ -17505,7 +17247,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc_guard.png",
-            "_v": 1588233923175
+            "_v": 1588496927054
         },
         {
             "id": "215c6e5f-38c8-4709-a9ec-e7cdc01ac702",
@@ -17513,7 +17255,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc_guard_2.png",
-            "_v": 1588233923174
+            "_v": 1588496927054
         },
         {
             "id": "d35838ee-f72a-4a25-93cd-e19b9329e4bb",
@@ -17521,7 +17263,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "npc_hound.png",
-            "_v": 1588233923175
+            "_v": 1588496927054
         },
         {
             "id": "2af76bb1-87ba-4151-a82b-9e76b4626805",
@@ -17529,7 +17271,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc_lars.png",
-            "_v": 1588233923175
+            "_v": 1588496927054
         },
         {
             "id": "cd5f3f59-fa4d-4ad3-971f-cc28c91e999b",
@@ -17537,7 +17279,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc_mary.png",
-            "_v": 1588233923175
+            "_v": 1588496927054
         },
         {
             "id": "c669cfa7-4bd7-4566-a079-ce2721be7601",
@@ -17545,7 +17287,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc_oldwoman.png",
-            "_v": 1588233923175
+            "_v": 1588496927054
         },
         {
             "id": "74966335-63a6-4998-bc18-7ec9ef2bbfbc",
@@ -17553,7 +17295,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc_stoic.png",
-            "_v": 1588233923175
+            "_v": 1588496927054
         },
         {
             "id": "a65d1365-9980-43aa-8239-7e80f338d327",
@@ -17561,7 +17303,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc_woman.png",
-            "_v": 1588233923175
+            "_v": 1588496927054
         },
         {
             "id": "ac1e8ef4-ffe6-47cd-b16f-9af5da77ec26",
@@ -17569,7 +17311,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "player.png",
-            "_v": 1588233923176
+            "_v": 1588496927054
         },
         {
             "id": "b774cec8-5cf9-420d-8662-ee2d6115c15c",
@@ -17577,7 +17319,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "player_2.png",
-            "_v": 1588233923176
+            "_v": 1588496927054
         },
         {
             "id": "a9e6a549-19b0-403a-ab16-f42c74d149b6",
@@ -17585,7 +17327,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Player_3.png",
-            "_v": 1588233923176
+            "_v": 1588496927054
         },
         {
             "id": "64992978-e347-4a71-b5da-fa848a8e3283",
@@ -17593,7 +17335,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "player_4.png",
-            "_v": 1588233923176
+            "_v": 1588496927054
         },
         {
             "id": "a0442b6a-634f-44da-9962-77938e3ed839",
@@ -17601,7 +17343,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "radio.png",
-            "_v": 1588233923176
+            "_v": 1588496927054
         },
         {
             "id": "3939e8d2-3987-4a22-953e-f1d82134eccf",
@@ -17609,7 +17351,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "rock.png",
-            "_v": 1588233923176
+            "_v": 1588496927054
         },
         {
             "id": "cbf9c8ba-6e7a-4c8d-835b-653ecad07f38",
@@ -17617,7 +17359,7 @@
             "numFrames": 4,
             "type": "animated",
             "filename": "rock_2.png",
-            "_v": 1588233923176
+            "_v": 1588496927054
         },
         {
             "id": "e20ce140-53a5-4b1b-9964-138ba0c86925",
@@ -17625,7 +17367,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "sage.png",
-            "_v": 1588233923177
+            "_v": 1588496927054
         },
         {
             "id": "000a6dde-cb60-436e-b357-30a529daa139",
@@ -17633,7 +17375,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "savepoint.png",
-            "_v": 1588233923177
+            "_v": 1588496927055
         },
         {
             "id": "30b8266a-0533-4f90-bd33-e97dc1d498ea",
@@ -17641,7 +17383,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "signpost.png",
-            "_v": 1588233923186
+            "_v": 1588496927055
         },
         {
             "id": "e9e61bf7-88fd-491d-ae01-4b7f76909108",
@@ -17649,7 +17391,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "torch.png",
-            "_v": 1588233923201
+            "_v": 1588496927055
         }
     ],
     "music": [
@@ -17657,7 +17399,7 @@
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
-            "_v": 1588233922886
+            "_v": 1588496927050
         }
     ],
     "customEvents": [
