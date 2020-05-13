@@ -2,9 +2,9 @@
     "settings": {
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 3240,
-        "worldScrollY": 3518,
-        "zoom": 500,
+        "worldScrollX": 7758,
+        "worldScrollY": 7806,
+        "zoom": 800,
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
         "customColorsDark": "509878",
@@ -2009,8 +2009,8 @@
                             "id": "1b618083-7dc6-4315-870c-50278e2bf2a7",
                             "command": "EVENT_SWITCH_SCENE",
                             "args": {
-                                "sceneId": "035bddd2-366c-43dc-9926-6a4a6e0985d1",
-                                "x": 16,
+                                "sceneId": "e8b9541f-a7fe-4da8-ad3e-69b0ed86288c",
+                                "x": 18,
                                 "y": 25,
                                 "direction": "up",
                                 "fadeSpeed": "2"
@@ -2517,25 +2517,317 @@
                     "id": "9d97377f-12cd-4e84-9c8f-86a7b98c36d8",
                     "x": 27,
                     "y": 27,
-                    "name": "Nihilist Nick",
+                    "name": "Nick",
                     "script": [
                         {
-                            "id": "b0916b02-3b00-49ab-a027-1fd83466bb8d",
-                            "command": "EVENT_TEXT",
+                            "id": "d390dc08-023c-483b-b38c-7d82fad4e745",
+                            "command": "EVENT_SWITCH",
                             "args": {
-                                "text": [
-                                    "I'm a good man. "
+                                "variable": "3",
+                                "choices": 7,
+                                "__collapseCase0": false,
+                                "value0": 1,
+                                "__collapseCase1": false,
+                                "value1": 2,
+                                "__collapseCase2": false,
+                                "value2": 3,
+                                "__collapseCase3": false,
+                                "value3": 4,
+                                "__collapseCase4": false,
+                                "value4": 5,
+                                "__collapseCase5": false,
+                                "value5": 6,
+                                "__collapseCase6": false,
+                                "value6": 7,
+                                "__collapseCase7": false,
+                                "value7": 8,
+                                "__collapseCase8": false,
+                                "value8": 9,
+                                "__collapseCase9": false,
+                                "value9": 10,
+                                "__collapseCase10": false,
+                                "value10": 11,
+                                "__collapseCase11": false,
+                                "value11": 12,
+                                "__collapseCase12": false,
+                                "value12": 13,
+                                "__collapseCase13": false,
+                                "value13": 14,
+                                "__collapseCase14": false,
+                                "value14": 15,
+                                "__collapseCase15": false,
+                                "value15": 16,
+                                "__collapseElse": false
+                            },
+                            "children": {
+                                "true0": [
+                                    {
+                                        "id": "b0916b02-3b00-49ab-a027-1fd83466bb8d",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "I'm a good man. "
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "39edf73d-202a-4d97-90cf-821c11a1195a",
+                                        "command": "EVENT_GROUP",
+                                        "args": {
+                                            "__label": "SuicideSequence",
+                                            "__collapse": true,
+                                            "__comment": true
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "5a2bd94c-de5a-436b-afd9-fa006928342c",
+                                                    "command": "EVENT_ACTOR_MOVE_TO",
+                                                    "args": {
+                                                        "actorId": "$self$",
+                                                        "x": 30,
+                                                        "y": 27
+                                                    }
+                                                },
+                                                {
+                                                    "id": "dc66887c-f65a-4de4-976d-693903621cef",
+                                                    "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                                                    "args": {
+                                                        "actorId": "$self$",
+                                                        "speed": "1"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "571391cc-d56f-4556-b962-2ff72f79d9e1",
+                                                    "command": "EVENT_CAMERA_SHAKE",
+                                                    "args": {
+                                                        "time": 0.25
+                                                    }
+                                                },
+                                                {
+                                                    "id": "f262d9c1-d8e3-4329-8146-bdc314a1b007",
+                                                    "command": "EVENT_ACTOR_SET_DIRECTION",
+                                                    "args": {
+                                                        "actorId": "9d97377f-12cd-4e84-9c8f-86a7b98c36d8",
+                                                        "direction": "right"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "abb3ad96-73f3-4c49-b79c-5ad2ee9edbad",
+                                                    "command": "EVENT_ACTOR_SET_POSITION",
+                                                    "args": {
+                                                        "actorId": "$self$",
+                                                        "x": 29,
+                                                        "y": 27
+                                                    }
+                                                },
+                                                {
+                                                    "id": "13628b79-848f-4922-82b1-09fbf3f7444d",
+                                                    "command": "EVENT_WAIT",
+                                                    "args": {
+                                                        "time": 1
+                                                    }
+                                                },
+                                                {
+                                                    "id": "b7b9c397-d93e-4a6e-911c-0385c172f0fc",
+                                                    "command": "EVENT_ACTOR_EMOTE",
+                                                    "args": {
+                                                        "actorId": "$self$",
+                                                        "emoteId": "1"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "69746b63-5d9c-405b-b9cc-1502dae503d8",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
+                                        },
+                                        "__type": "event"
+                                    },
+                                    {
+                                        "id": "5840e92b-324a-4686-a314-3ac3012f2697",
+                                        "command": "EVENT_END"
+                                    }
                                 ],
-                                "avatarId": ""
-                            }
-                        },
-                        {
-                            "id": "6805182f-6df2-4229-b1d6-bc7cd95d3e1b",
-                            "command": "EVENT_CHOICE",
-                            "args": {
-                                "variable": "L0",
-                                "trueText": "This is a test",
-                                "falseText": ""
+                                "true1": [
+                                    {
+                                        "id": "951fb848-f415-4e78-90b8-3a30e7dc1227",
+                                        "command": "EVENT_TEXT",
+                                        "args": {
+                                            "text": [
+                                                "<WALKS INTO THE\nFENCE>"
+                                            ],
+                                            "avatarId": ""
+                                        }
+                                    },
+                                    {
+                                        "id": "db744532-aa96-4eb9-bf9b-746a3f7c941e",
+                                        "command": "EVENT_GROUP",
+                                        "args": {
+                                            "__label": "SuicideSequence"
+                                        },
+                                        "children": {
+                                            "true": [
+                                                {
+                                                    "id": "972d0f16-4eaa-4bdc-8c1b-06ea9c8db82f",
+                                                    "command": "EVENT_ACTOR_MOVE_TO",
+                                                    "args": {
+                                                        "actorId": "$self$",
+                                                        "x": 30,
+                                                        "y": 27
+                                                    }
+                                                },
+                                                {
+                                                    "id": "753c358a-88e6-489e-8d19-ad0761c73d40",
+                                                    "command": "EVENT_ACTOR_SET_MOVEMENT_SPEED",
+                                                    "args": {
+                                                        "actorId": "$self$",
+                                                        "speed": "1"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "c04c1889-2b1a-49a8-ab2e-4fb763d915e3",
+                                                    "command": "EVENT_CAMERA_SHAKE",
+                                                    "args": {
+                                                        "time": 0.25
+                                                    }
+                                                },
+                                                {
+                                                    "id": "aaf0ac45-809a-47fd-b688-bfe40454e5c7",
+                                                    "command": "EVENT_ACTOR_SET_DIRECTION",
+                                                    "args": {
+                                                        "actorId": "9d97377f-12cd-4e84-9c8f-86a7b98c36d8",
+                                                        "direction": "right"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "ebaea06f-e7f2-4e33-8d57-765a82625d3a",
+                                                    "command": "EVENT_ACTOR_SET_POSITION",
+                                                    "args": {
+                                                        "actorId": "$self$",
+                                                        "x": 29,
+                                                        "y": 27
+                                                    }
+                                                },
+                                                {
+                                                    "id": "47019a92-702a-4abb-8287-dc2a699f079c",
+                                                    "command": "EVENT_WAIT",
+                                                    "args": {
+                                                        "time": 1
+                                                    }
+                                                },
+                                                {
+                                                    "id": "de48462e-e562-4fda-9b37-5b724dfd9aa9",
+                                                    "command": "EVENT_ACTOR_EMOTE",
+                                                    "args": {
+                                                        "actorId": "$self$",
+                                                        "emoteId": "1"
+                                                    }
+                                                },
+                                                {
+                                                    "id": "8d58cd42-ce69-4a94-94e0-268188753d50",
+                                                    "command": "EVENT_END"
+                                                }
+                                            ]
+                                        },
+                                        "__type": "event"
+                                    },
+                                    {
+                                        "id": "5a804a58-79ca-474d-ace3-7d52239f68f9",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "true2": [
+                                    {
+                                        "id": "9200f7e7-e016-41c3-8b21-86f3de30421e",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "true3": [
+                                    {
+                                        "id": "4b9b2246-d92f-494a-a3ac-e143bdcd2939",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "true4": [
+                                    {
+                                        "id": "4b476b7b-e280-4015-9736-24e19a2384eb",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "true5": [
+                                    {
+                                        "id": "24a8ed86-2b26-4258-bffa-209d422eb4d1",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "true6": [
+                                    {
+                                        "id": "e679a265-0e4a-44ca-9de9-2a7a5e5ebb74",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "true7": [
+                                    {
+                                        "id": "849cbf61-022f-4416-8ed7-0777b07502e2",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "true8": [
+                                    {
+                                        "id": "e8220831-3a8f-4589-bbf8-efedb0a80978",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "true9": [
+                                    {
+                                        "id": "7d4feda5-7aa2-44bf-99af-3e50e0a30c99",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "true10": [
+                                    {
+                                        "id": "f4cf998e-eee1-43b0-aa98-aa2cc03d410d",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "true11": [
+                                    {
+                                        "id": "34048644-c87b-4bf1-acb6-ace2c0244538",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "true12": [
+                                    {
+                                        "id": "3afdf82d-f719-44b0-b9d7-6711030e72af",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "true13": [
+                                    {
+                                        "id": "30fd6216-1c02-46ca-9d46-d69dd3a749c2",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "true14": [
+                                    {
+                                        "id": "841ffa1e-91bc-4ec2-b896-1e58dc5b8999",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "true15": [
+                                    {
+                                        "id": "cb8524e6-115f-4bd4-b1e9-40978a0ee354",
+                                        "command": "EVENT_END"
+                                    }
+                                ],
+                                "false": [
+                                    {
+                                        "id": "bf137341-d911-47af-806f-045f86c1601c",
+                                        "command": "EVENT_END"
+                                    }
+                                ]
                             }
                         },
                         {
@@ -2543,6 +2835,97 @@
                             "command": "EVENT_END"
                         }
                     ]
+                },
+                {
+                    "spriteSheetId": "65034143-0001-4076-a11f-ca35fb53ad28",
+                    "movementType": "faceInteraction",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "a5f91037-7148-4a66-8dee-cff363af5a74",
+                    "x": 21,
+                    "y": 16,
+                    "script": [
+                        {
+                            "id": "445299cb-3b6a-483e-b5ec-beb5c92f685c",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "That guy over\nthere.",
+                                    "He’s been\nstaring at the\nfence for all day.",
+                                    "I bet my supper\nthat he's not\ngoing to make it ",
+                                    "till next\nWednesday."
+                                ],
+                                "avatarId": ""
+                            }
+                        },
+                        {
+                            "id": "88102206-564a-4af7-958e-7abfac030e47",
+                            "command": "EVENT_MENU",
+                            "args": {
+                                "variable": "L0",
+                                "items": 4,
+                                "option1": "ABCDEF",
+                                "option2": "GHIJKL",
+                                "option3": "MNOPRS",
+                                "option4": "TUWXYZ",
+                                "option5": "123456",
+                                "option6": "",
+                                "option7": "",
+                                "option8": "",
+                                "cancelOnB": true,
+                                "layout": "dialogue"
+                            }
+                        },
+                        {
+                            "id": "0b1b4ae5-4baa-4a4e-8bff-7b5596d7f857",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                },
+                {
+                    "spriteSheetId": "65034143-0001-4076-a11f-ca35fb53ad28",
+                    "movementType": "faceInteraction",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "c1c00b33-091a-4ff6-95fc-085e9f0bde5e",
+                    "x": 23,
+                    "y": 16,
+                    "script": [
+                        {
+                            "id": "415d043d-4790-4e82-b38c-2a131f76a3eb",
+                            "command": "EVENT_MENU",
+                            "args": {
+                                "variable": "L0",
+                                "items": 4,
+                                "option1": "123456",
+                                "option2": "123456",
+                                "option3": "123456",
+                                "option4": "123456",
+                                "option5": "123456",
+                                "option6": "123456",
+                                "option7": "123456",
+                                "option8": "123456",
+                                "cancelOnB": true,
+                                "layout": "dialogue"
+                            }
+                        },
+                        {
+                            "id": "4e33613a-a909-45da-b9a0-df2f7192ed13",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                },
+                {
+                    "spriteSheetId": "7f0683f8-4cf8-461c-9f64-14f95e84cded",
+                    "movementType": "faceInteraction",
+                    "direction": "right",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "60ce14b2-d24c-4c70-b09a-b8f7d4f5729b",
+                    "x": 12,
+                    "y": 17
                 }
             ],
             "triggers": [
@@ -3037,8 +3420,8 @@
                 0
             ],
             "id": "18f960cc-ec8a-487c-9257-53d9d814c107",
-            "x": 630.761904761905,
-            "y": 882.253391053389,
+            "x": 644.6285714285737,
+            "y": 887.5867243867223,
             "actors": [
                 {
                     "spriteSheetId": "52ad34df-f245-4b2a-b94c-a82af1002871",
@@ -3232,17 +3615,17 @@
                     "id": "d0b3a958-6cff-4d53-b3da-5a2ce8e32b71",
                     "x": 1,
                     "y": 11,
-                    "name": "Mark"
+                    "name": "Ceasar"
                 },
                 {
                     "spriteSheetId": "dfa75239-299d-41fe-a6cd-9e9438da1938",
                     "movementType": "faceInteraction",
-                    "direction": "down",
+                    "direction": "right",
                     "moveSpeed": "1",
                     "animSpeed": "3",
                     "id": "8566200a-dc4f-4b93-bed6-7e0b08ebf214",
-                    "x": 17,
-                    "y": 23,
+                    "x": 20,
+                    "y": 5,
                     "name": "Witold_Outside",
                     "script": [
                         {
@@ -3415,6 +3798,63 @@
                             "command": "EVENT_END"
                         }
                     ]
+                },
+                {
+                    "spriteSheetId": "a65d1365-9980-43aa-8239-7e80f338d327",
+                    "movementType": "faceInteraction",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "e03f917c-4ab6-4a1d-ae54-9f6c99654b78",
+                    "x": 18,
+                    "y": 12,
+                    "script": [
+                        {
+                            "id": "0dc215ac-972f-49b2-b713-7b8c6db4890e",
+                            "command": "EVENT_TEXT",
+                            "args": {
+                                "text": [
+                                    "I've heard that\nsomeone is selling\nher... ",
+                                    "body for food. "
+                                ],
+                                "avatarId": ""
+                            }
+                        },
+                        {
+                            "id": "e444b4fd-72d4-4927-9610-a1a2726918ca",
+                            "command": "EVENT_END"
+                        }
+                    ]
+                },
+                {
+                    "spriteSheetId": "52ad34df-f245-4b2a-b94c-a82af1002871",
+                    "movementType": "faceInteraction",
+                    "direction": "right",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "2ff9393c-d973-4871-80e7-61df94c3c491",
+                    "x": 19,
+                    "y": 22
+                },
+                {
+                    "spriteSheetId": "40dcd163-9f72-4861-8131-b01eb9baa000",
+                    "movementType": "faceInteraction",
+                    "direction": "left",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "ec501c39-9add-416d-abb3-73f837fb94ed",
+                    "x": 21,
+                    "y": 22
+                },
+                {
+                    "spriteSheetId": "40dcd163-9f72-4861-8131-b01eb9baa000",
+                    "movementType": "faceInteraction",
+                    "direction": "down",
+                    "moveSpeed": "1",
+                    "animSpeed": "3",
+                    "id": "1abdf86a-5914-4806-b4dd-306f4aa9313c",
+                    "x": 27,
+                    "y": 13
                 }
             ],
             "triggers": [
@@ -17131,7 +17571,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "Barracks.png",
-            "_v": 1589230851283
+            "_v": 1589322411761
         },
         {
             "id": "cb8602db-5591-40e7-a185-e39f2dfd5692",
@@ -17141,7 +17581,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "barrack_interior.png",
-            "_v": 1589230851283
+            "_v": 1589322411761
         },
         {
             "id": "1e71c32e-ab16-410c-bc1e-d3a2070619cf",
@@ -17151,7 +17591,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "camp_1.png",
-            "_v": 1589230851283
+            "_v": 1589322411761
         },
         {
             "id": "51e07061-4d04-4595-9664-a32e13436360",
@@ -17161,7 +17601,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "camp_2.png",
-            "_v": 1589230851283
+            "_v": 1589322411761
         },
         {
             "id": "e90850dd-5ca6-4972-89a1-0a64e8d53bcd",
@@ -17171,7 +17611,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "camp_3.png",
-            "_v": 1589230851283
+            "_v": 1589322411761
         },
         {
             "id": "94539507-d2ae-4c06-90aa-6d86b0b093a7",
@@ -17181,7 +17621,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "camp_4.png",
-            "_v": 1589230851283
+            "_v": 1589322411761
         },
         {
             "id": "3a615edd-f1b1-44c4-8ac2-6da8bb1ea2f1",
@@ -17191,7 +17631,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "camp_5.png",
-            "_v": 1589230851283
+            "_v": 1589322411761
         },
         {
             "id": "8ad856f9-ad8c-482f-8735-7d82246de0f3",
@@ -17201,7 +17641,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "camp_6.png",
-            "_v": 1589230851283
+            "_v": 1589322411761
         },
         {
             "id": "6fad1892-bcb2-4924-bd1c-1e4d03dfeabb",
@@ -17211,7 +17651,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "cave.png",
-            "_v": 1589230851283
+            "_v": 1589322411761
         },
         {
             "id": "b340b9a2-2865-4e05-91c0-148846a693c8",
@@ -17221,7 +17661,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "house.png",
-            "_v": 1589230851283
+            "_v": 1589322411761
         },
         {
             "id": "a1639c01-eb6d-4d15-b3a0-d1c2a40c352b",
@@ -17231,7 +17671,7 @@
             "imageWidth": 96,
             "imageHeight": 16,
             "filename": "Items.png",
-            "_v": 1589230851283
+            "_v": 1589322411761
         },
         {
             "id": "543e3da1-7703-4a1b-af74-8b8210f35586",
@@ -17241,7 +17681,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "kitchen.png",
-            "_v": 1589230851283
+            "_v": 1589322411761
         },
         {
             "id": "f8b1c7ad-7bb2-44b2-8189-175ae8698f11",
@@ -17251,7 +17691,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "logo.png",
-            "_v": 1589230851283
+            "_v": 1589322411761
         },
         {
             "id": "b49ea566-b022-478c-979d-ec3ee255fdc5",
@@ -17261,7 +17701,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "menu.png",
-            "_v": 1589230851283
+            "_v": 1589322411761
         },
         {
             "id": "fbe75bcf-27d7-4551-98dc-96d499f906ba",
@@ -17271,7 +17711,7 @@
             "imageWidth": 166,
             "imageHeight": 144,
             "filename": "MenuItems_Placeholder.png",
-            "_v": 1589230851283
+            "_v": 1589322411761
         },
         {
             "id": "355dfc79-1e1b-41c0-bb2a-d36dd31b0d56",
@@ -17281,7 +17721,7 @@
             "imageWidth": 166,
             "imageHeight": 144,
             "filename": "MenuPlaceholder.png",
-            "_v": 1589230851283
+            "_v": 1589322411761
         },
         {
             "id": "7767d28f-3c08-4f21-85c5-0405e5c89198",
@@ -17291,7 +17731,7 @@
             "imageWidth": 166,
             "imageHeight": 144,
             "filename": "MenuStats_Placeholder.png",
-            "_v": 1589230851283
+            "_v": 1589322411761
         },
         {
             "id": "1b7fa267-d716-40f0-b0d0-f4f966610e07",
@@ -17301,7 +17741,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "outside.png",
-            "_v": 1589230851283
+            "_v": 1589322411761
         },
         {
             "id": "0b35a06b-6d2e-49d7-8b55-ec989e49a106",
@@ -17311,7 +17751,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "ramp.png",
-            "_v": 1589230851284
+            "_v": 1589322411761
         },
         {
             "id": "40fda058-df90-4205-a239-fe77bce4fa79",
@@ -17321,7 +17761,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "stars.png",
-            "_v": 1589230851284
+            "_v": 1589322411761
         },
         {
             "id": "f047ff0e-58ad-49fc-bd2b-ec84fc1f7ab3",
@@ -17331,7 +17771,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "titlescreen.png",
-            "_v": 1589230851293
+            "_v": 1589322411761
         },
         {
             "id": "ed36c1d5-40b6-4d4c-b763-f07d94ff418e",
@@ -17341,7 +17781,7 @@
             "imageWidth": 160,
             "imageHeight": 144,
             "filename": "Train.png",
-            "_v": 1589230851284
+            "_v": 1589322411761
         },
         {
             "id": "f3102db4-2273-411d-b33f-4d6f65959c60",
@@ -17351,7 +17791,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "underground.png",
-            "_v": 1589230851308
+            "_v": 1589322411762
         },
         {
             "id": "8333404c-9543-473b-9ff7-44924ded8c5b",
@@ -17361,7 +17801,7 @@
             "imageWidth": 256,
             "imageHeight": 256,
             "filename": "workshop-interior.png",
-            "_v": 1589230851300
+            "_v": 1589322411762
         }
     ],
     "spriteSheets": [
@@ -17371,7 +17811,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "cat.png",
-            "_v": 1589230851281
+            "_v": 1589322411762
         },
         {
             "id": "f0c3033d-e82a-407d-9fe2-3d5da4f59c09",
@@ -17379,7 +17819,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "checkbox.png",
-            "_v": 1589230851281
+            "_v": 1589322411762
         },
         {
             "id": "17219846-cda9-4e84-bdfa-c3ff105d42cc",
@@ -17387,7 +17827,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "dog.png",
-            "_v": 1589230851281
+            "_v": 1589322411762
         },
         {
             "id": "ede130e6-013a-42d1-a786-1aed3fd3cf32",
@@ -17395,7 +17835,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "duck.png",
-            "_v": 1589230851281
+            "_v": 1589322411762
         },
         {
             "id": "f2610e3c-8ff9-42fa-a9bb-d1591031fa17",
@@ -17403,7 +17843,7 @@
             "numFrames": 4,
             "type": "animated",
             "filename": "fire.png",
-            "_v": 1589230851282
+            "_v": 1589322411762
         },
         {
             "id": "5a3b26b9-b209-46c4-a35d-ab589ee8bce1",
@@ -17411,7 +17851,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "heart.png",
-            "_v": 1589230851281
+            "_v": 1589322411762
         },
         {
             "id": "09ad70c6-3ce5-4b97-9e96-466221418a45",
@@ -17419,7 +17859,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "ice.png",
-            "_v": 1589230851282
+            "_v": 1589322411762
         },
         {
             "id": "b5cc8bbd-c107-4e51-9ec5-41f882b586ae",
@@ -17427,7 +17867,7 @@
             "numFrames": 4,
             "type": "animated",
             "filename": "Items.png",
-            "_v": 1589230851281
+            "_v": 1589322411762
         },
         {
             "id": "e43d9c10-e62a-431f-9b49-fec14d8f7e4c",
@@ -17435,7 +17875,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "item_medicine.png",
-            "_v": 1589230851281
+            "_v": 1589322411762
         },
         {
             "id": "1a11d3fb-ad73-47c6-9066-2332e2b9e0af",
@@ -17443,7 +17883,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "item_soup.png",
-            "_v": 1589230851281
+            "_v": 1589322411762
         },
         {
             "id": "17f795ce-88fd-4508-8a88-0d16e17d0251",
@@ -17451,7 +17891,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "MenuArrow.png",
-            "_v": 1589230851281
+            "_v": 1589322411762
         },
         {
             "id": "dfa75239-299d-41fe-a6cd-9e9438da1938",
@@ -17459,7 +17899,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc001.png",
-            "_v": 1589230851282
+            "_v": 1589322411763
         },
         {
             "id": "40dcd163-9f72-4861-8131-b01eb9baa000",
@@ -17467,7 +17907,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc002.png",
-            "_v": 1589230851282
+            "_v": 1589322411763
         },
         {
             "id": "52ad34df-f245-4b2a-b94c-a82af1002871",
@@ -17475,7 +17915,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "npc003.png",
-            "_v": 1589230851282
+            "_v": 1589322411763
         },
         {
             "id": "dbc3d5e1-7f1b-47bf-864a-ccc5dab4501d",
@@ -17483,7 +17923,15 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc_ guard.png",
-            "_v": 1589230851281
+            "_v": 1589322411762
+        },
+        {
+            "id": "65034143-0001-4076-a11f-ca35fb53ad28",
+            "name": "npc_004",
+            "numFrames": 3,
+            "type": "actor",
+            "filename": "npc_004.png",
+            "_v": 1589322411762
         },
         {
             "id": "5d6c73d5-2f81-4b5c-9c52-a8519bc4f572",
@@ -17491,7 +17939,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc_capo_1.png",
-            "_v": 1589230851281
+            "_v": 1589322411762
         },
         {
             "id": "35b61700-f747-49ac-b7db-c0b33e93e8ac",
@@ -17499,7 +17947,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc_ceasar.png",
-            "_v": 1589230851281
+            "_v": 1589322411762
         },
         {
             "id": "e5d7e3ea-c36e-46ca-bb62-6d6202b7d383",
@@ -17507,7 +17955,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc_doctor_1.png",
-            "_v": 1589230851281
+            "_v": 1589322411762
         },
         {
             "id": "0fa027a7-dadd-4ec3-8d0f-5787667cd03d",
@@ -17515,7 +17963,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc_enemy.png",
-            "_v": 1589230851281
+            "_v": 1589322411762
         },
         {
             "id": "5bd6d620-6bb5-43db-b0c1-0e34a7574470",
@@ -17523,7 +17971,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc_guard.png",
-            "_v": 1589230851281
+            "_v": 1589322411762
         },
         {
             "id": "215c6e5f-38c8-4709-a9ec-e7cdc01ac702",
@@ -17531,7 +17979,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc_guard_2.png",
-            "_v": 1589230851281
+            "_v": 1589322411762
         },
         {
             "id": "8aa332e3-fb8f-424e-8cc1-574a4cc5f451",
@@ -17539,7 +17987,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc_hannah.png",
-            "_v": 1589230851281
+            "_v": 1589322411762
         },
         {
             "id": "d35838ee-f72a-4a25-93cd-e19b9329e4bb",
@@ -17547,7 +17995,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "npc_hound.png",
-            "_v": 1589230851282
+            "_v": 1589322411762
         },
         {
             "id": "2af76bb1-87ba-4151-a82b-9e76b4626805",
@@ -17555,7 +18003,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc_lars.png",
-            "_v": 1589230851282
+            "_v": 1589322411762
         },
         {
             "id": "cd5f3f59-fa4d-4ad3-971f-cc28c91e999b",
@@ -17563,7 +18011,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc_mary.png",
-            "_v": 1589230851282
+            "_v": 1589322411762
         },
         {
             "id": "c669cfa7-4bd7-4566-a079-ce2721be7601",
@@ -17571,7 +18019,15 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc_oldwoman.png",
-            "_v": 1589230851282
+            "_v": 1589322411762
+        },
+        {
+            "id": "7f0683f8-4cf8-461c-9f64-14f95e84cded",
+            "name": "npc_philip",
+            "numFrames": 3,
+            "type": "actor",
+            "filename": "npc_philip.png",
+            "_v": 1589322411762
         },
         {
             "id": "74966335-63a6-4998-bc18-7ec9ef2bbfbc",
@@ -17579,7 +18035,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc_stoic.png",
-            "_v": 1589230851282
+            "_v": 1589322411763
         },
         {
             "id": "a65d1365-9980-43aa-8239-7e80f338d327",
@@ -17587,7 +18043,7 @@
             "numFrames": 3,
             "type": "actor",
             "filename": "npc_woman.png",
-            "_v": 1589230851282
+            "_v": 1589322411763
         },
         {
             "id": "ac1e8ef4-ffe6-47cd-b16f-9af5da77ec26",
@@ -17595,7 +18051,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "player.png",
-            "_v": 1589230851282
+            "_v": 1589322411763
         },
         {
             "id": "b774cec8-5cf9-420d-8662-ee2d6115c15c",
@@ -17603,7 +18059,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "player_2.png",
-            "_v": 1589230851282
+            "_v": 1589322411763
         },
         {
             "id": "a9e6a549-19b0-403a-ab16-f42c74d149b6",
@@ -17611,7 +18067,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "Player_3.png",
-            "_v": 1589230851282
+            "_v": 1589322411763
         },
         {
             "id": "64992978-e347-4a71-b5da-fa848a8e3283",
@@ -17619,7 +18075,7 @@
             "numFrames": 6,
             "type": "actor_animated",
             "filename": "player_4.png",
-            "_v": 1589230851282
+            "_v": 1589322411763
         },
         {
             "id": "a0442b6a-634f-44da-9962-77938e3ed839",
@@ -17627,7 +18083,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "radio.png",
-            "_v": 1589230851283
+            "_v": 1589322411764
         },
         {
             "id": "3939e8d2-3987-4a22-953e-f1d82134eccf",
@@ -17635,7 +18091,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "rock.png",
-            "_v": 1589230851282
+            "_v": 1589322411764
         },
         {
             "id": "cbf9c8ba-6e7a-4c8d-835b-653ecad07f38",
@@ -17643,7 +18099,7 @@
             "numFrames": 4,
             "type": "animated",
             "filename": "rock_2.png",
-            "_v": 1589230851282
+            "_v": 1589322411764
         },
         {
             "id": "e20ce140-53a5-4b1b-9964-138ba0c86925",
@@ -17651,7 +18107,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "sage.png",
-            "_v": 1589230851283
+            "_v": 1589322411764
         },
         {
             "id": "000a6dde-cb60-436e-b357-30a529daa139",
@@ -17659,7 +18115,7 @@
             "numFrames": 2,
             "type": "animated",
             "filename": "savepoint.png",
-            "_v": 1589230851283
+            "_v": 1589322411764
         },
         {
             "id": "30b8266a-0533-4f90-bd33-e97dc1d498ea",
@@ -17667,7 +18123,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "signpost.png",
-            "_v": 1589230851283
+            "_v": 1589322411764
         },
         {
             "id": "e9e61bf7-88fd-491d-ae01-4b7f76909108",
@@ -17675,7 +18131,7 @@
             "numFrames": 1,
             "type": "static",
             "filename": "torch.png",
-            "_v": 1589230851283
+            "_v": 1589322411764
         }
     ],
     "music": [
@@ -17683,7 +18139,7 @@
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
             "name": "template",
             "filename": "template.mod",
-            "_v": 1589230851047
+            "_v": 1589322411757
         }
     ],
     "customEvents": [
